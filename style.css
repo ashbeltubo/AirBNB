@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+:root {
+    --clr-accent: #f55a5a;
+    --ff-main: "Inter", sans-serif;
+}
+
+
+/* ---------------------- */
+
+
+/* Typography             */
+
+
+/* ---------------------- */
+
+html {
+    font-family: var(--ff-main);
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+/* ---------------------- */
+
+
+/* Components             */
+
+
+/* ---------------------- */
+
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+    color: white;
+    background-color: #f55a5a;
+}
+
+.navtitle {
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.navlogo {
+    height: 40px;
+}
+
+
+/* CARD */
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 3em;
+}
+
+.card {
+    color: var(--clr-text-main);
+    display: flex;
+    flex-direction: row;
+    padding: 2em 0;
+}
+
+.card--img {
+    height: 100%;
+    /* width: 20vw; */
+    width: 20em;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.3em;
+    transform: scale(1);
+    transition: all 650ms ease-in-out;
+}
+
+.card--infos {
+    margin-left: 1em;
+    padding: 0.5em;
+}
+
+.card--location-icon {
+    color: var(--clr-accent);
+}
+
+.card--location {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    margin: 0 1em 0 0.25em;
+    color: var(--clr-text-main);
+}
+
+.card--location-url {
+    color: var(--clr-text-light);
+    font-size: 0.75rem;
+}
+
+.card--title {
+    font-size: 2rem;
+    margin: 0.25em 0;
+    font-weight: 700;
+}
+
+.card--date {
+    font-weight: 700;
+}
+
+.card--description {
+    max-width: 50rem;
+    margin-top: 2em;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 150%;
+}
+
+
+/* Dynamic cards divider  */
